@@ -1,1 +1,111 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Accuracy Digital</title>
+  <style>
+    @font-face {
+      font-family: 'Switzer-Variable';
+      src: url('Switzer-Variable.woff2') format('woff2'),
+        url('Switzer-Variable.woff') format('woff');
+    }
+
+    body {
+      background-color: rgb(23, 23, 23);
+      color: rgb(255, 255, 255);
+      font-family: 'Switzer-Variable', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 5rem;
+      background: -webkit-linear-gradient(45deg, rgb(255, 215, 0), rgb(0, 191, 255));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: transform 0.3s ease-in-out;
+      margin-top: 0.5rem;
+    }
+
+    h1:hover {
+      transform: scale(1.1);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: rgb(255, 255, 255);
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: rgb(150, 150, 150);
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+      stroke: url(#gradient);
+      margin-top: 0.5rem;
+    }
+
+    .logo-gradient {
+      gradientUnits: userSpaceOnUse;
+      x1: 0;
+      y1: 0;
+      x2: 100;
+      y2: 100;
+    }
+
+    .logo-gradient stop:first-child {
+      stop-color: rgb(255, 215, 0);
+    }
+
+    .logo-gradient stop:last-child {
+      stop-color: rgb(0, 191, 255);
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      .logo {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="url(#gradient)"
+    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <defs>
+      <linearGradient id="gradient" class="logo-gradient">
+        <stop offset="0%" />
+        <stop offset="100%" />
+      </linearGradient>
+    </defs>
+    <circle cx="12" cy="12" r="10"></circle>
+    <circle cx="12" cy="12" r="4"></circle>
+  </svg>
+  <h1>Accuracy Digital</h1>
+  <h2>Web Solutions Consulting</h2>
+  <p>Under Construction</p>
+</body>
+
+</html>
