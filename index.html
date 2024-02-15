@@ -16,7 +16,7 @@
       font-family: 'Switzer-Variable', sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: top;
       align-items: center;
       height: 100vh;
       margin: 0;
@@ -50,6 +50,10 @@
       margin-bottom: 10px;
       stroke: url(#gradient);
       margin-top: 0.5rem;
+    }
+
+    .logo:hover {
+      cursor: pointer;
     }
 
     @keyframes rotateClockwise {
@@ -124,6 +128,7 @@
       align-items: center;
       max-width: 80%;
       margin: 0 auto;
+      margin-top: 2rem;
     }
 
     #digital {
@@ -142,6 +147,46 @@
       /* Classic hyperlink blue */
       text-decoration: underline;
       /* Classic hyperlink purple */
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px auto;
+      /* center the card */
+      width: 80%;
+      /* make the card smaller than its parent */
+      background-color: rgb(23, 23, 23);
+      /* dark background */
+      color: #fff;
+      /* light text */
+      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      /* animate the background color and transform */
+    }
+
+    .card:hover {
+      background-color: rgb(31, 31, 31);
+      transform: scale(1.02);
+      /* slightly lighter on hover */
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #fff;
+      /* light text */
+    }
+
+    .icon {
+      width: 35px;
+      height: 36px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    #money-bag {
+      width: 50px;
+      height: 50px;
     }
   </style>
 </head>
@@ -178,8 +223,25 @@
   </svg> -->
 
     <span><span id="accuracy">Accuracy .</span><span id="digital">Digital</span></span>
-    <h2>🚀 Supercharge your online presence with expert web solutions tailored to your business needs</h2>
+    <h2> Precision in Every Pixel: Crafting Exceptional Web Experiences</h2>
+    <div class="card">
+      <h3><img class="icon" src="process.svg" alt="Tools icon"> Connect Your Tools</h3>
+      <p>We help you connect all your business tools into one seamless system. This means less hassle for you and more
+        time to focus on growing your business.</p>
+    </div>
+    <div class="card">
+      <h3><img id="money-bag" class="icon" src="money-bag2.svg" alt="Store icon"> Build Your Online Store</h3>
+      <p>Want an online store that looks great and is easy to use? We build websites that not only catch the eye but
+        also make shopping a breeze for your customers.</p>
+    </div>
+    <div class="card">
+      <h3><img class="icon" src="marketing.svg" alt="Marketing icon"> Master Your Marketing</h3>
+      <p>Unlock the power of data-driven marketing. We'll help you harness analytics to understand your audience better
+        and craft targeted campaigns. Get ready to elevate your marketing strategy and see tangible results.</p>
+    </div>
+
     <section class="contact-section">
+
       <p>Contact us for a free quote</p>
       <a href="https://www.linkedin.com/in/gavinacquroff/" target="_blank">
         <img src="linkedin-icon.svg" alt="LinkedIn" width="36" height="36">
